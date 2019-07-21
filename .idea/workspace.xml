@@ -88,8 +88,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Run game">
+    <configuration name="Run game" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.udacity.Game" />
       <module name="Project_1_-_TicTacToe.main" />
       <method v="2">
@@ -114,7 +114,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Run game" />
       <item itemvalue="Gradle.Project 1 - TicTacToe" />
     </list>
     <recent_temporary>
@@ -133,15 +133,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563740743394</updated>
-      <workItem from="1563740744673" duration="1055000" />
+      <workItem from="1563740744673" duration="1307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1055000" />
+    <option name="totallyTimeSpent" value="1307000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="20" width="1260" height="649" extended-state="0" />
+    <frame x="10" y="20" width="1260" height="649" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
