@@ -151,6 +151,33 @@ public class Game {
     public String checkGameWinner(char [][]grid){
         String result = "None";
         //Student code goes here ...
+
+        // three in the same row (or colum?)
+        if (((grid[0][0] == 'x') || (grid[0][0] == 'o') ) && (grid[0][0] == grid[0][1]) && (grid[0][0] == grid[0][2]))
+            result = "" + Character.toUpperCase(grid[0][0]) + " wins";
+        else if (((grid[1][0] == 'x') || (grid[1][0] == 'o')) && (grid[1][0] == grid[1][1]) && (grid[1][0] == grid[1][2]))
+            result = "" + Character.toUpperCase(grid[1][0]) + " wins";
+        else if (((grid[2][0] == 'x') || (grid[2][0] == 'o')) && (grid[2][0] == grid[2][1]) && (grid[2][0] == grid[2][2]))
+            result = "" + Character.toUpperCase(grid[2][0]) + " wins";
+
+        // three in the same column (or row?)
+        else if (((grid[0][0] == 'x') || (grid[0][0] == 'o')) && (grid[0][0] == grid[1][0]) && (grid[0][0] == grid[2][0]))
+            result = "" + Character.toUpperCase(grid[0][0]) + " wins";
+        else if (((grid[0][1] == 'x') || (grid[0][1] == 'o')) && (grid[0][1] == grid[1][1]) && (grid[0][1] == grid[2][1]))
+            result = "" + Character.toUpperCase(grid[0][1]) + " wins";
+        else if (((grid[0][2] == 'x') || (grid[0][2] == 'o')) && (grid[0][2] == grid[1][2]) && (grid[0][2] == grid[2][2]))
+            result = "" + Character.toUpperCase(grid[0][2]) + " wins";
+
+        // diagonals:
+        else if (((grid[0][0] == 'x') || (grid[0][0] == 'o')) && (grid[0][0] == grid[1][1]) && (grid[0][0] == grid[2][2]))
+            result = "" + Character.toUpperCase(grid[0][0]) + " wins";
+        else if (((grid[0][2] == 'x') || (grid[0][2] == 'o')) && (grid[0][2] == grid[1][1]) && (grid[0][2] == grid[2][0]))
+            result = "" + Character.toUpperCase(grid[0][2]) + " wins";
+
+        // Tie
+        else if (freeSpots == 0)
+            result = "Tie";
+
         return result;
     }
 
