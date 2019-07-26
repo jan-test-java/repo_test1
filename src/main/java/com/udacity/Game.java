@@ -174,9 +174,22 @@ public class Game {
         else if (((grid[0][2] == 'x') || (grid[0][2] == 'o')) && (grid[0][2] == grid[1][1]) && (grid[0][2] == grid[2][0]))
             result = "" + Character.toUpperCase(grid[0][2]) + " wins";
 
+        else {
+            int count = 0;
+            for (int i=0; i<3; i++)
+                for (int j=0; j<3; j++)
+                    if ((grid[i][j] == 'x') || (grid[i][j] == 'o'))
+                            count++;
+            if (count == 9)
+                result = "tie";
+        }
+
+        /*
         // Tie
         else if (freeSpots == 0)
-            result = "Tie";
+            result = "tie";
+
+         */
 
         return result;
     }
